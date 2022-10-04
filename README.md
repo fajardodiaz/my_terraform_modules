@@ -4,7 +4,7 @@
 terraform {
   required_version = "~> 1.2"
 
-# Define your own backend (s3 example)
+### Define your own backend (s3 example)
   backend "s3" {
     bucket = "bucket_name"
     key    = "path/to/terraformstate/terraform.state"
@@ -23,7 +23,7 @@ provider "aws" {
   region = "set aws provider here"
 }
 
-## requirements to use Networking module
+### requirements to use Networking module
 module "Networking" {
   source            = "./modules/Networking"
   availability_zone = "put availability zone here"
